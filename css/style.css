@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #edf2f4;
+}
+body header {
+  background-color: #d90429;
+  margin-bottom: 1%;
+  padding: 0.5%;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+body header h2 {
+  vertical-align: bottom;
+  margin-left: 2%;
+  grid-column: 2;
+  color: #edf2f4;
+}
+body header .responsive {
+  width: 100%;
+  height: auto;
+  grid-column: 1;
+}
+body #main blockquote {
+  background-color: #8d99ae;
+  margin: 1%;
+  padding: 2%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 2fr 1fr;
+}
+body #main blockquote h3 {
+  margin: 0 0 1%;
+  color: #edf2f4;
+  grid-row: 1;
+  grid-column: 1/spand 2;
+  border-bottom: 1px solid #ef233c;
+}
+body #main blockquote p {
+  padding-right: 2%;
+  grid-column: 1;
+  grid-row: 2;
+}
+body #main blockquote p strong {
+  color: #ef233c;
+}
+body #main blockquote img {
+  border: 2px solid #edf2f4;
+  grid-column: 2;
+  grid-row: 2;
+}
+body #main blockquote .responsive {
+  width: 100%;
+  height: auto;
+  visibility: visible;
+}
+body footer {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  bottom: 0%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+body footer section {
+  padding: 5% 10%;
+}
+body footer section .responsive {
+  width: 50%;
+  height: auto;
+  visibility: collapse;
+}
+
+#test {
+  background-color: #2b2d42;
+}
+#test blockquote {
+  padding: 3%;
+  background-color: #8d99ae;
+}
+#test blockquote h2 {
+  color: #d90429;
+}
+#test blockquote .responsive {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 480px) {
+  body header {
+    grid-template: none;
+    padding: 2%;
+    align-content: center;
+  }
+  body header .responsive {
+    width: 20%;
+    height: auto;
+    align-items: center;
+  }
+  body header h2 {
+    display: none;
+  }
+  body #main blockquote {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  body #main blockquote h3 {
+    grid-row: 1;
+    grid-column: 1/spand 2;
+  }
+  body #main blockquote p {
+    grid-row: 3;
+    grid-column: 1/spand 2;
+  }
+  body #main blockquote img {
+    grid-row: 2;
+    grid-column: 1/spand 2;
+  }
+  body footer section .responsive {
+    width: 50%;
+    height: auto;
+    visibility: visible;
+  }
+}/*# sourceMappingURL=style.css.map */
